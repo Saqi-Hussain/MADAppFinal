@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6dec5"
+    tools:context=".login_Page">
+
+    <TextView
+        android:id="@+id/Dam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:text="DAM"
+        android:textColor="#b80000"
+        android:textSize="85sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="113dp"
+        android:layout_toEndOf="@id/Dam"
+        android:textColor="#b80000"
+        android:textSize="40sp"
+        android:text="APP"
+        android:textStyle=""
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log_in"
+        android:textColor="#b80000"
+        android:layout_below="@id/Dam"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"
+        android:id="@+id/logInMiniTitle"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:layout_below="@id/logInMiniTitle"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:layout_marginTop="10sp"
+        android:textColor="#b80000"
+        android:id="@+id/emailMiniTitle"
+        />
+
+    <EditText
+        android:id="@+id/emailInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailMiniTitle"
+        android:layout_marginLeft="20dp"
+        android:hint="enter_email_here"
+        android:paddingRight="220sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password:"
+        android:layout_below="@id/emailInsert"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:layout_marginTop="10sp"
+        android:textColor="#b80000"
+        android:id="@+id/passwordMiniTitle"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordMiniTitle"
+        android:layout_marginLeft="20dp"
+        android:hint="enter the pass here"
+        android:paddingRight="190sp"
+        android:id="@+id/passwordInsert"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordInsert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:backgroundTint="#b80000"
+        android:text="log in"
+        android:id="@+id/loginBtn"
+        />
+
+
+
+</RelativeLayout>

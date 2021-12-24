@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6dec5"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/Dam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:text="DAM"
+        android:textColor="#b80000"
+        android:textSize="85sp"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="113dp"
+        android:layout_toEndOf="@id/Dam"
+        android:textColor="#b80000"
+        android:textSize="40sp"
+        android:text="APP"
+        android:textStyle="" />
+
+    <TextView
+        android:id="@+id/create_Link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Dam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="create account ?"
+        android:textColor="#b80000"
+        android:textSize="23sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/or_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_Link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="or"
+        android:textColor="#b80000"
+        android:textSize="23sp"
+        />
+
+
+    <TextView
+        android:id="@+id/login_Link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_Link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="log_in"
+        android:textColor="#b80000"
+        android:textSize="23sp"
+        />
+
+
+</RelativeLayout>

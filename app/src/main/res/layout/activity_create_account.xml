@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6dec5"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Dam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:text="DAM"
+                android:textColor="#b80000"
+                android:textSize="85sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="63dp"
+                android:layout_toEndOf="@id/Dam"
+                android:textColor="#b80000"
+                android:textSize="40sp"
+                android:text="APP"
+                android:textStyle="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="create_an_account"
+                android:textColor="#b80000"
+                android:layout_below="@id/Dam"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:id="@+id/createAccountMiniTitle"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="full_name"
+                android:layout_below="@id/createAccountMiniTitle"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"
+                android:layout_marginTop="10sp"
+                android:textColor="#b80000"
+                android:id="@+id/fullNameMiniTitle"
+                />
+
+            <EditText
+                android:id="@+id/createFullNameInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullNameMiniTitle"
+                android:layout_marginStart="20dp"
+                android:hint="enter_full_name_here"
+                android:paddingEnd="145dp"
+                android:maxLength="20"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:layout_below="@id/createFullNameInsert"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"
+                android:layout_marginTop="10sp"
+                android:textColor="#b80000"
+                android:id="@+id/emailMiniTitle"
+                />
+
+            <EditText
+                android:id="@+id/createEmailInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailMiniTitle"
+                android:layout_marginStart="20dp"
+                android:hint="enter_email_here"
+                android:paddingEnd="180dp"
+                android:maxLength="25"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/createEmailInsert"
+                android:text="date_of_birth"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"
+                android:layout_marginTop="10sp"
+                android:textColor="#b80000"
+                android:id="@+id/dobMiniTitle"
+                />
+
+            <EditText
+                android:id="@+id/dobId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dobMiniTitle"
+                android:layout_marginStart="20dp"
+                android:hint="enter_date_of_birth_here"
+                android:inputType="datetime"
+                android:paddingEnd="125dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="password"
+                android:layout_below="@id/dobId"
+                android:layout_marginStart="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:textColor="#b80000"
+                android:id="@+id/miniPasswordTitle"
+                />
+
+            <EditText
+                android:id="@+id/createPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/miniPasswordTitle"
+                android:layout_marginStart="20dp"
+                android:hint="enter password here"
+                android:paddingEnd="135dp"
+                android:maxLength="10"
+                android:inputType="textPassword"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="address:"
+                android:layout_below="@id/createPassword"
+                android:layout_marginStart="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:textColor="#b80000"
+                android:id="@+id/miniAddress"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/miniAddress"
+                android:layout_marginStart="20dp"
+                android:hint="enter address here"
+                android:paddingEnd="145dp"
+                android:id="@+id/createAddress"
+                android:maxLength="100"
+                />
+
+            <Button
+                android:id="@+id/createBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/createAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35sp"
+                android:backgroundTint="#b80000"
+                android:text="Create" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
